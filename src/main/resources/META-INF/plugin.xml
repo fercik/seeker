@@ -1,0 +1,163 @@
+<idea-plugin>
+    <id>com.kuantuum.seeker</id>
+    <name>Seeker</name>
+    <version>1.0.0</version>
+    <vendor>
+        Piotr Fert
+    </vendor>
+
+    <description><![CDATA[
+        <p>Effortlessly switch between files in your project with this plugin inspired by Neovim's Harpoon!</p>
+
+        <p>Key features:</p>
+        <ul>
+            <li>
+                <b>Add Current File:</b> Quickly add the currently open file to a custom list for easy access.
+            </li>
+            <li>
+                <b>File Switching:</b> Seamlessly switch between files on your list with a simple command.
+            </li>
+            <li>
+                <b>Custom Positioning:</b> Insert the currently open file into a specific position on the list for precise organization.
+            </li>
+            <li>
+                <b>Remove Files:</b> Easily remove files from your list to keep it clean and relevant.
+            </li>
+        </ul>
+
+        <p>This plugin streamlines navigation, saving you time and improving focus on your projects. Perfect for developers looking to optimize their workflow in IntelliJ!</p>
+   ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add extensions here -->
+    </extensions>
+
+    <applicationListeners>
+        <listener class="com.kuantuum.seeker.listeners.KeymapListener"
+                  topic="com.intellij.openapi.keymap.KeymapManagerListener"/>
+    </applicationListeners>
+
+    <actions>
+        <!-- Add actions -->
+        <action id="AddAction" class="com.kuantuum.seeker.actions.AddAction"
+                text="Add Current File"
+                description="Adds the current file to a list."/>
+
+        <action id="AddAtAction0"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 0"
+                description="Adds the current file to a list on position 0"/>
+
+        <action id="AddAtAction1"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 1"
+                description="Adds the current file to a list on position 1"/>
+
+        <action id="AddAtAction2"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 2"
+                description="Adds the current file to a list on position 2"/>
+
+        <action id="AddAtAction3"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 3"
+                description="Adds the current file to a list on position 3"/>
+
+        <action id="AddAtAction4"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 4"
+                description="Adds the current file to a list on position 4"/>
+
+        <action id="AddAtAction5"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 5"
+                description="Adds the current file to a list on position 5"/>
+
+        <action id="AddAtAction6"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 6"
+                description="Adds the current file to a list on position 6"/>
+
+        <action id="AddAtAction7"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 7"
+                description="Adds the current file to a list on position 7"/>
+
+        <action id="AddAtAction8"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 8"
+                description="Adds the current file to a list on position 8"/>
+
+        <action id="AddAtAction9"
+                class="com.kuantuum.seeker.actions.AddAtPositionAction"
+                text="Add Current File On Position 9"
+                description="Adds the current file to a list on position 9"/>
+
+        <!-- Get actions -->
+        <action id="GetAtAction0"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 0"
+                description="Gets the file from the list on position 0"/>
+
+        <action id="GetAtAction1"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 1"
+                description="Gets the file from the list on position 1"/>
+
+        <action id="GetAtAction2"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 2"
+                description="Gets the file from the list on position 2"/>
+
+        <action id="GetAtAction3"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 3"
+                description="Gets the file from the list on position 3"/>
+
+        <action id="GetAtAction4"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 4"
+                description="Gets the file from the list on position 4"/>
+
+        <action id="GetAtAction5"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 5"
+                description="Gets the file from the list on position 5"/>
+
+        <action id="GetAtAction6"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 6"
+                description="Gets the file from the list on position 6"/>
+
+        <action id="GetAtAction7"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 7"
+                description="Gets the file from the list on position 7"/>
+
+        <action id="GetAtAction8"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 8"
+                description="Gets the file from the list on position 8"/>
+
+        <action id="GetAtAction9"
+                class="com.kuantuum.seeker.actions.GetAtPositionAction"
+                text="Get File On Position 9"
+                description="Gets the file from the list on position 9"/>
+
+        <!-- Other actions -->
+        <action id="ShowPopupAction"
+                class="com.kuantuum.seeker.actions.ShowPopupAction"
+                text="Show Popup" description="Shows a popup."/>
+
+        <action id="NextFileAction"
+                class="com.kuantuum.seeker.actions.NavigateFileAction"
+                text="Next File"
+                description="Move to the next file."/>
+
+        <action id="PrevFileAction"
+                class="com.kuantuum.seeker.actions.NavigateFileAction"
+                text="Previous File" description="Move to the previous file."/>
+    </actions>
+</idea-plugin>
